@@ -2,118 +2,148 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Transformacja Męska 45+</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f5f5;
-      color: #1a1a1a;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      opacity: 0;
-      transform: translateY(-20px);
-      animation: fadeInDown 1.2s ease forwards;
-    }
-
-    p.description {
-      font-size: 1.1rem;
-      max-width: 600px;
-      margin-bottom: 30px;
+      background-color: #000;
+      color: #fff;
       line-height: 1.6;
     }
 
-    .btn {
-      background-color: #222;
-      color: #fff;
-      padding: 14px 30px;
-      border: none;
-      cursor: pointer;
-      font-size: 1rem;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1.5s ease forwards;
-      animation-delay: 0.8s;
+    header {
+      background-color: #111;
+      padding: 100px 20px 60px;
+      text-align: center;
     }
 
-    .btn:hover {
-      background-color: #444;
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      color: #ccc;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
     }
 
     .benefits {
-      margin-top: 60px;
-      max-width: 700px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
     }
 
-    .benefits h2 {
-      font-size: 1.6rem;
-      margin-bottom: 20px;
+    .benefits p {
+      color: #bbb;
+      font-size: 1.1rem;
     }
 
-    .benefits ul {
-      list-style: none;
-      padding: 0;
+    form {
+      background-color: #111;
+      padding: 40px;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: 40px auto;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
     }
 
-    .benefits li {
-      margin: 10px 0;
+    form input, form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 1px solid #444;
+      border-radius: 4px;
+      background-color: #000;
+      color: #fff;
       font-size: 1rem;
     }
 
+    form button {
+      background-color: #ccc;
+      color: #000;
+      border: none;
+      padding: 15px 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    form button:hover {
+      background-color: #fff;
+    }
+
     footer {
-      margin-top: 60px;
+      padding: 30px 20px;
+      text-align: center;
+      color: #888;
       font-size: 0.9rem;
-      color: #777;
-    }
-
-    @keyframes fadeInDown {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Transformacja Męska 45+</h1>
-  <p class="description">
-    Program stworzony specjalnie dla mężczyzn po 45. roku życia, którzy chcą odzyskać siłę, pewność siebie i zdrowie – bez zbędnych komplikacji i presji.
-  </p>
-  <button class="btn">Dołącz teraz</button>
+  <header>
+    <h1>Transformacja Męska 45+</h1>
+    <div class="video-container">
+      <!-- Wklej tutaj link do swojego video np. z YouTube lub Vimeo -->
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </header>
 
-  <section class="benefits">
-    <h2>Co zyskasz:</h2>
-    <ul>
-      <li>✅ Sprawność fizyczną dostosowaną do Twojego wieku</li>
-      <li>✅ Lepsze samopoczucie i energia każdego dnia</li>
-      <li>✅ Indywidualne podejście i proste narzędzia</li>
-      <li>✅ Społeczność wspierających facetów 45+</li>
-    </ul>
+  <section>
+    <h2>Dla kogo jest ten program?</h2>
+    <div class="benefits">
+      <p>✅ Dla mężczyzn po 45. roku życia, którzy chcą zadbać o zdrowie i formę</p>
+      <p>✅ Bez presji, w swoim tempie – z jasnym planem działania</p>
+      <p>✅ Z szacunkiem, bez krzykliwego marketingu</p>
+      <p>✅ Prowadzony przez specjalistów z doświadczeniem</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Dołącz teraz</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Imię" required />
+      <input type="email" name="email" placeholder="Adres e-mail" required />
+      <textarea name="message" placeholder="Wiadomość (opcjonalnie)"></textarea>
+      <button type="submit">Zapisz się</button>
+    </form>
   </section>
 
   <footer>
-    Kontakt: <a href="mailto:kontakt@transformacja45plus.pl">kontakt@transformacja45plus.pl</a>
+    Kontakt: <a href="mailto:kontakt@transformacja45plus.pl" style="color:#ccc">kontakt@transformacja45plus.pl</a>  
+    <br/>© 2025 Transformacja Męska 45+
   </footer>
 
 </body>
 </html>
-
